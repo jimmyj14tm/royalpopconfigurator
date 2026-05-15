@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Royal Pop Watch Configurator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h3>Royal Pop Watch Configurator</h3>
+            <p>Swipe the watch or use selectors below</p>
+        </header>
+        
+        <div class="main-layout">
+            <div class="watch-viewport" id="viewport">
+                <div class="swipe-track" id="strap-track"></div>
+                <div class="swipe-track" id="case-track"></div>
+                <div class="swipe-track" id="face-track"></div>
+                
+                <div class="touch-zone" id="case-zone"></div>
+                <div class="touch-zone" id="face-zone"></div>
+                <div class="touch-zone" id="strap-zone"></div>
+            </div>
+
+            <div class="selection-panel">
+    <div class="selectors-container">
+        <section class="selector-column">
+            <h3>Face</h3>
+            <div class="color-selector">
+                <button class="nav-btn" onclick="changeColor('face', -1)">&#9650;</button>
+                <div class="current-info">
+                    <div class="swatch-preview" id="face-preview"></div>
+                    <span class="color-name" id="face-name">Black</span>
+                </div>
+                <button class="nav-btn" onclick="changeColor('face', 1)">&#9660;</button>
+            </div>
+        </section>
+
+        <section class="selector-column">
+            <h3>Case</h3>
+            <div class="color-selector">
+                <button class="nav-btn" onclick="changeColor('case', -1)">&#9650;</button>
+                <div class="current-info">
+                    <div class="swatch-preview" id="case-preview"></div>
+                    <span class="color-name" id="case-name">Black</span>
+                </div>
+                <button class="nav-btn" onclick="changeColor('case', 1)">&#9660;</button>
+            </div>
+        </section>
+
+        <section class="selector-column">
+            <h3>Strap</h3>
+            <div class="color-selector">
+                <button class="nav-btn" onclick="changeColor('strap', -1)">&#9650;</button>
+                <div class="current-info">
+                    <div class="swatch-preview" id="strap-preview"></div>
+                    <span class="color-name" id="strap-name">Black</span>
+                </div>
+                <button class="nav-btn" onclick="changeColor('strap', 1)">&#9660;</button>
+            </div>
+        </section>
+    </div>
+    <div class="button-container">
+        <button id="random-btn" class="random-button" onclick="randomizeWatch()">Randomize</button>
+        <button id="download-btn" class="download-button" onclick="downloadWatch()">Download</button>
+    </div>
+    <div class="link-container">
+        <a href="https://buymeacoffee.com/jimmyj14tm">Buy me a coffee</a>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
